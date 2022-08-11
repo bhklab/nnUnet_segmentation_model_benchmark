@@ -20,3 +20,4 @@ The data that was used for this project is stored at '/cluster/projects/radiomic
 ### 4.Calculating Degradation Metrics
 >- Be sure to add evaluation metrics for the clean image to the csv file generated form step 3.
 >- Degradation Metrics can be calculated using /segmentation_robustness/examples/metric_calculations.py, column names should be change accordingly.
+>- Please see https://arxiv.org/abs/2203.06060 for formula and interpretations of the degradation metrics.
