@@ -118,19 +118,19 @@ out_dir = '/cluster/home/t114639uhn/segmentation_robustness/results'
 #         ]
 #         df.append(dict(zip(cols, row_entry)))
 #for file globbig mismatch problem
-img_num_mapping = {
-    'gyn_0120':'00',
-    'gyn_0121':'01',
-    'gyn_0122':'02',
-    'gyn_0123':'03',
-    'gyn_0124':'04',
-    'gyn_0125':'05',
-    'gyn_0126':'06',
-    'gyn_0127':'07',
-    'gyn_0128':'08',
-    'gyn_0129':'09',
-    'gyn_0130':'010',
-    'gyn_0131':'011'}
+# img_num_mapping = {
+#     'gyn_0120':'00',
+#     'gyn_0121':'01',
+#     'gyn_0122':'02',
+#     'gyn_0123':'03',
+#     'gyn_0124':'04',
+#     'gyn_0125':'05',
+#     'gyn_0126':'06',
+#     'gyn_0127':'07',
+#     'gyn_0128':'08',
+#     'gyn_0129':'09',
+#     'gyn_0130':'010',
+#     'gyn_0131':'011'}
 
 # For calculating single label dice for each of the labels
 for i in list(itertools.product(transforms, severity_lvls)):
