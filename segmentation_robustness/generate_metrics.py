@@ -117,7 +117,8 @@ out_dir = '/cluster/home/t114639uhn/segmentation_robustness/results'
 #             dice,
 #         ]
 #         df.append(dict(zip(cols, row_entry)))
-#for file globbig mismatch problem
+
+##for file globbig mismatch problem
 # img_num_mapping = {
 #     'gyn_0120':'00',
 #     'gyn_0121':'01',
@@ -142,7 +143,10 @@ for i in list(itertools.product(transforms, severity_lvls)):
         path = test_labels[i].split('.')[-3]
         img_num = path.split('/')[-1]
         print(img_num + tr_lvl)
-        image_path = data_dir + tr_lvl + '/image/benchmark_' + img_num_mapping[img_num] + '.nii.gz'
+        prefix = '000'
+        length =  len(str(i))
+        prefix = prefix[:(-1)*length]
+        image_path = data_dir + tr_lvl + '/image/benchmark_' + prefix + str(i) + '.nii.gz'
         pred = nib.load(image_path).get_fdata()
         label = nib.load(test_labels[i]).get_fdata()
         print(pred.shape)
