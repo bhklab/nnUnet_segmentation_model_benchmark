@@ -4,4 +4,5 @@ The data that was used for this project is stored at '/cluster/projects/radiomic
 <img src="workflow.png" alt="drawing" width="900" />
 
 
-##The general workflow for testing robusness of a segmentation model
+## How testing robusness of a segmentation model works
+### generate a benchmarking dataset
