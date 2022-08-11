@@ -147,6 +147,7 @@ for i in list(itertools.product(transforms, severity_lvls)):
         length =  len(str(i))
         prefix = prefix[:(-1)*length]
         image_path = data_dir + tr_lvl + '/image/benchmark_' + prefix + str(i) + '.nii.gz'
+#         image_path = data_dir + tr_lvl + '/image/benchmark_' + img_num_mapping[img_num] + '.nii.gz'
         pred = nib.load(image_path).get_fdata()
         label = nib.load(test_labels[i]).get_fdata()
         print(pred.shape)
