@@ -6,12 +6,12 @@ The data that was used for this project is stored at '/cluster/projects/radiomic
 
 ## How Testing Robusness of a Segmentation Model Works
 ### 1.Generate a Benchmarking Dataset
-> Change the input and output path in /segmentation_robustness/examples/dataset_generation.py and run this file.
-> The transformations for benchmarking dataset generation are stored in /segmentation_robustness/examples/roodmri/transforms/defaults.py, which can be modified if needed.
+>- Change the input and output path in /segmentation_robustness/examples/dataset_generation.py and run this file.
+>- The transformations for benchmarking dataset generation are stored in /segmentation_robustness/examples/roodmri/transforms/defaults.py, which can be modified if needed.
 
 ### 2.Testing the Model on the Benchmarking Dataset
-> Instructions for running nnUnet model inference can be found at https://github.com/MIC-DKFZ/nnUNet#run-inference.
-> Other models such as UNet/UNetR can be tested with the testing file segmentation_robustness/test.py.
+>- Instructions for running nnUnet model inference can be found at https://github.com/MIC-DKFZ/nnUNet#run-inference.
+>- Other models such as UNet/UNetR can be tested with the testing file segmentation_robustness/test.py.
 
 ### 3.Calculating Evaluation Metrics
-> Evaluation metrics can be calculated using /segmentation_robustness/generate_metrics.py, there are different functions in this file for multilabel/siglelabel segmentation.
+>- Evaluation metrics can be calculated using /segmentation_robustness/generate_metrics.py, there are different functions in this file for multilabel/siglelabel segmentation.
