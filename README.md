@@ -14,4 +14,9 @@ The data that was used for this project is stored at '/cluster/projects/radiomic
 >- Other models such as UNet/UNetR can be tested with the testing file segmentation_robustness/test.py.
 
 ### 3.Calculating Evaluation Metrics
->- Evaluation metrics can be calculated using /segmentation_robustness/generate_metrics.py, there are different functions in this file for multilabel/siglelabel segmentation.
+>- Evaluation metrics for each severity level + transformation combination can be calculated using /segmentation_robustness/generate_metrics.py, there are different functions in this file for multilabel/siglelabel segmentation.
+>- A csv file will be generated from generate_metrics.py.
+
+### 4.Calculating Degradation Metrics
+>- Be sure to add evaluation metrics for the clean image to the csv file generated form step 3.
+>- Degradation Metrics can be calculated using /segmentation_robustness/examples/metric_calculations.py, column names should be change accordingly.
